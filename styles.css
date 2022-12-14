@@ -1,0 +1,107 @@
+body, html {
+    background-color: rgb(34, 34, 34);
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    transition: background-color 0.25s;
+}
+
+#header:hover {
+    background-color: rgb(15, 9, 7);
+}
+
+.page-link {
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 1.5%;
+    font-size: 2vw;
+    color: beige;
+    transition: background-color 0.25s, border 0.25s, color 0.25s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 1vh black solid;
+}
+
+.page-link:hover {
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
+    color: orangered;
+    border-bottom: 1vh orangered solid;
+}
+
+.active-page {
+    color: orange;
+    border-bottom: 1vh orange solid;
+}
+
+/*MAIN PAGE*/
+
+#page-title {
+    width: fit-content;
+    margin-top: 20vh;
+    margin-left: 3vw;
+    font-size: 5vw;
+    color: beige;
+    padding: 1vw;
+    transition: background-color 0.25s, border 0.25s, color 0.25s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 2vh black solid;
+    background-color: rgba(255, 68, 0, 0.233);
+    transition: scale 0.25s, background-color 0.25s;
+}
+
+#page-title:hover {
+    cursor: grab;
+    scale: 1.025;
+    background-color: rgb(255, 68, 0);
+}
+
+/*LINKS PAGE*/
+
+#link-container {
+    margin: 0.75vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    background-color: rgba(19, 18, 17, 0.863);
+    font-size: 2vw;
+    color: beige;
+    padding: 0.1vw;
+    transition: background-color 0.25s, border 0.25s, color 0.25s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: scale 0.25s, background-color 0.25s, border 0.25s, box-shadow 0.25s;
+    border: 0.5vw rgb(0, 0, 0) solid;
+}
+
+#link-container:hover {
+    border: 0.5vw rgb(255, 123, 0) solid;
+    scale: 1.1;
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 0px 0px 25px black;
+}
+
+
+#double-grid {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: rgb(255, 68, 0);
+    padding-bottom: 10vh;
+    box-shadow: 0px -2vh rgb(17, 17, 17);
+}
+
+.site-title {
+    padding: 0;
+    text-align: center;
+}
